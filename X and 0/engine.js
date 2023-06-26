@@ -1,12 +1,3 @@
-let pos_1 = document.getElementById("matrixElement_1");
-let pos_2 = document.getElementById("matrixElement_2");
-let pos_3 = document.getElementById("matrixElement_3");
-let pos_4 = document.getElementById("matrixElement_4");
-let pos_5 = document.getElementById("matrixElement_5");
-let pos_6 = document.getElementById("matrixElement_6");
-let pos_7 = document.getElementById("matrixElement_7");
-let pos_8 = document.getElementById("matrixElement_8");
-let pos_9 = document.getElementById("matrixElement_9");
 let X_or_0 = 1, objectPlayer = "X", matrix = [], n = 0, x = 0, y = 0;
 
 function initMatrix() {
@@ -64,40 +55,60 @@ function handleMouseOver(number) {
   if(n == 0) {
     initMatrix();
   }
+  var id = "matrixElement_";
+  let pos_1 = document.getElementById(id);
     if (number == 1 && matrix[1][1] != 0 && matrix[1][1] != 1) {
+      id = id + number;
+      pos_1 = document.getElementById(id);
       pos_1.innerHTML = objectPlayer;
       matrix[1][1] = X_or_0;
       ++n;
     }else if(number == 2 && matrix[1][2] != 0 && matrix[1][2] != 1) {
-      pos_2.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[1][2] = X_or_0;
       ++n;
     }else if(number == 3 && matrix[1][3] != 0 && matrix[1][3] != 1) {
-      pos_3.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[1][3] = X_or_0;
       ++n;
     }else if(number == 4 && matrix[2][1] != 0 && matrix[2][1] != 1) {
-      pos_4.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[2][1] = X_or_0;
       ++n;
     }else if(number == 5 && matrix[2][2] != 0 && matrix[2][2] != 1) {
-      pos_5.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[2][2] = X_or_0;
       ++n;
     }else if(number == 6 && matrix[2][3] != 0 && matrix[2][3] != 1) {
-      pos_6.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[2][3] = X_or_0;
       ++n;
     }else if(number == 7 && matrix[3][1] != 0 && matrix[3][1] != 1) {
-      pos_7.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[3][1] = X_or_0;
       ++n;
     }else if(number == 8 && matrix[3][2] != 0 && matrix[3][2] != 1) {
-      pos_8.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[3][2] = X_or_0;
       ++n;
     }else if(number == 9 && matrix[3][3] != 0 && matrix[3][3] != 1) {
-      pos_9.innerHTML = objectPlayer;
+      id = id + number;
+      pos_1 = document.getElementById(id);
+      pos_1.innerHTML = objectPlayer;
       matrix[3][3] = X_or_0;
       ++n;
     }
